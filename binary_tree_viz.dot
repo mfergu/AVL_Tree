@@ -1,0 +1,23 @@
+digraph BST {
+    graph [dpi=150]
+    nodesep=0.3;
+    ranksep=0.2;
+    margin=0.1;
+    node [shape=circle fontname="Helvetica";];
+    edge [arrowsize=0.8];
+
+    //below is the code that actually makes the graph, everything above this comment 
+    //is boilerplate and can be hardcoded in dump_dot(..), the internal method
+    //"build_dot_content()" returns a string containing the lines below (generated from the tree)
+    node1 [label="4"];
+    node1 -> node2;
+    node2 [label="1"];
+    node2 -> node4;
+    node4 [label="0"];
+    node2 -> node5;
+    node5 [label="2"];
+    node1 -> node3;
+    node3 [label="9"];
+    node3 -> node7;
+    node7 [label="10"];
+}

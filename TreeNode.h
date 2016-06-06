@@ -6,10 +6,9 @@ class TreeNode{
     TreeNode();
     TreeNode(int nu_val) : element(nu_val)
       {}
-  protected:
     int element;
     TreeNode *left;
-    TreeNode ^right;
-}
+    TreeNode *right;
+};
 #endif
   
